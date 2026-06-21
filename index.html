@@ -4,51 +4,101 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Badam Milk Stories</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-body{font-family:Arial,sans-serif;margin:0;background:#faf7f0;color:#333}
-header{background:#d9b56d;padding:40px;text-align:center}
-section{max-width:900px;margin:auto;padding:30px}
-.card{background:white;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.08);margin:20px 0}
-.button{display:inline-block;padding:12px 20px;background:#d9b56d;color:black;text-decoration:none;border-radius:6px}
-footer{text-align:center;padding:20px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:#0f172a;color:#fff;overflow-x:hidden}
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;background-position:center;
+display:flex;align-items:center;justify-content:center;text-align:center}
+.hero h1{font-size:4rem}
+.hero p{font-size:1.2rem;max-width:700px;margin:20px auto}
+.btn{display:inline-block;padding:14px 28px;background:#fbbf24;color:#111;border-radius:30px;text-decoration:none;font-weight:600}
+.section{padding:80px 10%}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:rgba(255,255,255,.08);backdrop-filter:blur(10px);padding:25px;border-radius:20px}
+.story{font-size:1.1rem;line-height:1.8;max-width:900px;margin:auto;text-align:center}
+.gallery{overflow:hidden;white-space:nowrap}
+.gallery-track{display:inline-block;animation:scroll 25s linear infinite}
+.gallery img{height:250px;width:350px;object-fit:cover;border-radius:15px;margin:0 10px}
+@keyframes scroll{
+0%{transform:translateX(0)}
+100%{transform:translateX(-50%)}
+}
+.stats{display:flex;justify-content:center;gap:60px;flex-wrap:wrap}
+.stat{text-align:center}
+.stat h2{font-size:3rem;color:#fbbf24}
+.footer{text-align:center;padding:40px;background:#020617}
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:white;padding:15px 18px;border-radius:50%;
+text-decoration:none;font-size:24px}
 </style>
 </head>
 <body>
-<header>
-<h1>🥛 Badam Milk Stories</h1>
-<p>Every bottle has a story.</p>
-</header>
 
-<section>
-<div class="card">
-<h2>Our Story</h2>
-<p>What started as a simple recipe shared with family and friends became a mission to serve fresh, delicious badam milk made with care. Every bottle is prepared with quality ingredients and a passion for bringing people together.</p>
-</div>
-
-<div class="card">
-<h2>Why Our Badam Milk?</h2>
-<ul>
-<li>Freshly prepared</li>
-<li>Rich almond flavor</li>
-<li>Made with care and consistency</li>
-<li>Perfect for any time of the day</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>Message From the Founder</h2>
-<p>Thank you for supporting a local business. Your purchase helps us continue our journey of serving authentic badam milk to our community.</p>
-</div>
-
-<div class="card">
-<h2>Order & Contact</h2>
-<p>Replace this section with your WhatsApp number, Instagram page, or order link.</p>
-<a href="#" class="button">Order Now</a>
+<section class="hero">
+<div>
+<h1>🥛 Every Bottle Has A Story</h1>
+<p>Freshly crafted badam milk inspired by tradition, made for today's generation.</p>
+<a href="#story" class="btn">Discover Our Journey</a>
 </div>
 </section>
 
-<footer>
-<p>Scan the QR code on the bottle to read our story.</p>
-</footer>
+<section class="section" id="story">
+<h2 style="text-align:center;margin-bottom:30px">Our Story</h2>
+<p class="story">
+What began as a family recipe became a passion. Every bottle is prepared with carefully selected almonds,
+fresh milk, and a commitment to authentic taste. We believe great drinks create great memories.
+</p>
+</section>
+
+<section class="section">
+<h2 style="text-align:center;margin-bottom:40px">Why Customers Love Us</h2>
+<div class="cards">
+<div class="card"><h3>🌰 Premium Almonds</h3><p>Selected for rich flavor and texture.</p></div>
+<div class="card"><h3>🥛 Fresh Daily</h3><p>Prepared fresh to ensure quality.</p></div>
+<div class="card"><h3>❤️ Made With Care</h3><p>Traditional recipes with modern standards.</p></div>
+</div>
+</section>
+
+<section class="section">
+<h2 style="text-align:center;margin-bottom:40px">Behind The Scenes</h2>
+<div class="gallery">
+<div class="gallery-track">
+<img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1000&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1000&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?q=80&w=1000&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?q=80&w=1000&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1000&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1000&auto=format&fit=crop">
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="stats">
+<div class="stat"><h2>15K+</h2><p>Bottles Served</p></div>
+<div class="stat"><h2>4.9★</h2><p>Customer Rating</p></div>
+<div class="stat"><h2>100%</h2><p>Fresh Daily</p></div>
+</div>
+</section>
+
+<section class="section">
+<h2 style="text-align:center;margin-bottom:20px">Scan. Discover. Enjoy.</h2>
+<p class="story">
+Scan the QR code on your bottle to discover new stories, special offers, and behind-the-scenes moments.
+</p>
+</section>
+
+<div class="footer">
+<p>© 2026 Badam Milk Stories</p>
+</div>
+
+<a class="whatsapp" href="#">💬</a>
+
 </body>
 </html>
